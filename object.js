@@ -49,7 +49,7 @@ const person = {
     console.log(person.city);*/
 
 
-    const person = {
+   /* const person = {
   name: "John",
   age: 30,
   city: "New York"
@@ -60,6 +60,35 @@ let text = JSON.stringify(person);
 console.log(text);
 console.log(person.name);
 console.log(person.age);
-console.log(person.city);
+console.log(person.city);*/
+   
+ 
+const mysumb = Symbol("key1")
+const user = {
+    name :"hitesh",
+    [mysumb]: "key1",
+    age : 19,
+    city : "patan",
+    email : "dhruviul1232gmail.com"
+}
+
+    //console.log(user.email)
+    //console.log(user['email'])
+    //console.log(user[mysumb])
+
+    user.email = "pandya2322gmail.com"
+    //Object.freeze(user)
+    user.email = "pandya33@gmail.com"
+    //console.log(user);
+
+
+    user.greeting = function(){
+        console.log(`hello, ${this.name}`);
+    }
+
+    console.log(user.greeting());
+
+
+
 
 

@@ -1,8 +1,8 @@
 /*const letter = new set();
-letter.add("krishn");
-letter.add("radhe");
-letter.add("govind");
-console.log(letter);*/
+letters.add("krishn");
+letters.add("radhe");
+letters.add("govind");
+console.log(letters);*/
 
 
 
@@ -126,3 +126,84 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(scroe1,score2,score3));
+
+
+
+
+
+const nums = new Set([1, 2, 3]);
+
+console.log(nums.has(2));  
+console.log(nums.has(5));  
+
+nums.delete(1);
+console.log(nums); 
+
+nums.clear();
+console.log(nums); 
+
+
+
+//const letter = new setInterval(["mango","banana","cherry"]);
+//console.log(letter);
+
+
+/*const colors = new setInterval(["yellow","black","purple"]);
+
+for (let color of colors) {
+  console.log(color);
+
+}
+  colors.foreach(c => console.log(c));*/
+
+
+
+
+  /*const colors = new Set(["red", "green", "blue"]);
+
+for (let color of colors) {
+  console.log(color);
+}
+
+// or using forEach
+colors.forEach(c => console.log(c));*/
+
+
+const fruits = new Set();
+fruits.add("apple");
+fruits.add("banana");
+fruits.add("apple"); 
+
+fruits.clear();
+
+const number = new Set([1,2,3,4,5]);
+
+number.delete(2);
+console.log(number);
+
+let letters = new Set(["aa","bbb","ccc"]);
+for (let entry of letters.entries()) {
+  console.log(entry);
+}
+
+
+
+
+let cities = new Set(["bombay","mumbai","pune"]);
+
+for(let key of cities.keys(2)) {
+
+  console.log(key)
+}
+
+
+let A = new Set(['a','b','c' ,'e']);
+let B = new Set(['b','c','d']);
+
+let  C = A.isSubsetOf(B);//symmetricDifference(B);//difference//intersection(A);//union(B);
+console.log(A);
+
+
+
+
+

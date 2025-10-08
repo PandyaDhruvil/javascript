@@ -86,7 +86,7 @@ let num_float = num_int;  // Implicitly converts int to float
        //const total = numberr.reduce((acc,curr) => acc+curr, 1)
        //console.log(total);
 
-       const shoppingcart = [
+       /*const shoppingcart = [
         {
             itemname : "js course",
             price : "$500"
@@ -105,7 +105,85 @@ let num_float = num_int;  // Implicitly converts int to float
 
         const pricetopay = shoppingcart.reduce((acc,item) =>  acc + item.price, 0)
 
-        console.log(pricetopay);
+        console.log(pricetopay);*/
+
+
+
+        const num = [1,2,3,4]
+
+        const double = num.map(num => num  + 2)
+
+        console.log(num);
+        console.log(double);
+
+        const user = [
+            {name:"pandya", salary:50000, company:"vinayak"},
+            {name:"mali", salary:60000, company:"vinayak"},
+            {name:"ceo", salary:100000, company:"vinayak"}
+        ]
+            const names = user.map((u => u.name))
+
+            console.log(user);
+            console.log(names);
+
+
+
+
+            const fruit = ["Banana", "Orange", "Apple", "Mango"];
+
+let myList = fruit.toString();
+
+console.log(fruit);
+
+
+// //object to string
+// let perosn={
+//     firstname:"john",
+//     lastname:"don"
+
+// }
+//         let text = perosn.toString()
+//         console.log(firstname);
+
+
+        let y = "5";      
+        let x = + y; 
+
+        console.log(y);
+        console.log(x);
+
+
+        let number = [1,2,3,4,5,6];
+
+        number.forEach(num => num *2);
+        console.log(num);
+
+       let doubled = number.map(num => num * 2);
+       console.log(doubled);
+
+        let evens = number.filter(num => num % 2==0);
+        console.log(evens);
+
+        let sum = number.reduce((acc,num) => acc + num,2);
+        console.log(sum);
+
+        let array =  [
+            {name:'pp',age:21},
+            {name:'dp',age:23},
+            {name:'pd',age:22},
+        ];
+
+            let per = array.find(p => p.age > 22);
+            console.log(per);
+
+            array.sort((a,b) => a.age - b.age);
+            console.log(array);
+
+        
+
+
+
+        
 
 
 
